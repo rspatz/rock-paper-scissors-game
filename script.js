@@ -29,14 +29,6 @@ function playGame(playerMove) {
     }
   }
 
-  if (result === 'You Win!') {
-    score.wins += 1;
-  } else if (result === 'You lose.') {
-    score.losses += 1;
-  } else if (result === 'Tie.') {
-    score.ties += 1;
-  }
-
   alert(
     `You picked ${playerMove}. Computer picked ${computerMove}. ${result}.`
   );
