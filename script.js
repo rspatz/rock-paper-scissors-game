@@ -1,12 +1,8 @@
-let score = JSON.parse(localStorage.getItem('score'));
-
-if (score === null) {
-  score = {
-    wins: 0,
-    losses: 0,
-    ties: 0
-  };
-}
+let score = JSON.parse(localStorage.getItem('score')) || {
+  wins: 0,
+  losses: 0,
+  ties: 0
+};
 
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
